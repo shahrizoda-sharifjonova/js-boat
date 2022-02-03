@@ -14,6 +14,7 @@ const clouds = document.querySelectorAll('.cloud'),
     txt = 'paralax effect',
     i = 0;
 
+
 function typing() {
     if (i < txt.length) {
         title.innerHTML += txt.charAt(i);
@@ -21,8 +22,5 @@ function typing() {
         setTimeout(typing, 160);
     }
 }
-
+    
 typing()
-
-    
-    

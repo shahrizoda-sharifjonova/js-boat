@@ -9,5 +9,20 @@ const clouds = document.querySelectorAll('.cloud'),
            el.style.transform = `translateX(${window.scrollY * speed}px)`
        })
     })
+
+    let title = document.querySelector('.header__title'),
+    txt = 'paralax effect',
+    i = 0;
+
+function typing() {
+    if (i < txt.length) {
+        title.innerHTML += txt.charAt(i);
+        i++
+        setTimeout(typing, 160);
+    }
+}
+
+typing()
+
     
     
